@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZZDNPTQ9D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YZZDNPTQ9D');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Landing Page with Redirect</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif;}
+    body {background: #f4f6ff; color: #1a1a1a;}
+    header {background: #ffffff; padding: 20px 50px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05);}
+    header h1 {color: #0066ff;}
+    .hero {height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 20px;}
+    .hero h2 {font-size: 3rem; color: #111; margin-bottom: 20px;}
+    .hero p {max-width: 600px; color: #555; margin-bottom: 30px; font-size: 1.1rem;}
+    .btn {background: #0066ff; color: white; padding: 15px 40px; border: none; border-radius: 8px; font-size: 1.1rem; cursor: pointer; transition: all 0.3s;}
+    .btn:hover {background: #004bcc; transform: translateY(-3px);}
+    section.features {padding: 80px 10%; background: white; text-align: center;}
+    .features h3 {font-size: 2rem; margin-bottom: 40px; color: #111;}
+    .feature-box {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;}
+    .card {background: #f8f9ff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);}
+    footer {text-align: center; padding: 20px; color: #666; background: #fff;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen Tech</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Experience the Future of Technology</h2>
+    <p>Our innovative solutions help businesses and individuals reach new heights in performance and design. Join us and explore the future today.</p>
+    <button class="btn" onclick="window.location.href='https://www.openai.com'">Go to Our Main Site</button>
+  </section>
+
+  <section class="features">
+    <h3>Why Choose Us?</h3>
+    <div class="feature-box">
+      <div class="card">
+        <h4>🚀 Fast Performance</h4>
+        <p>Optimized for blazing speed and seamless user experience.</p>
+      </div>
+      <div class="card">
+        <h4>🔒 Secure Systems</h4>
+        <p>Built with strong encryption and best security standards.</p>
+      </div>
+      <div class="card">
+        <h4>💡 Innovative Design</h4>
+        <p>Modern, clean, and flexible designs that impress users.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> NextGen Tech. All Rights Reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
